@@ -1,8 +1,8 @@
 from .battery import Battery
-from datetime import _Date
+from datetime import date
 
 class Spindler(Battery):
-    def __init__(self, last_service_date: _Date, current_date: _Date) -> None:
+    def __init__(self, last_service_date: date, current_date: date) -> None:
         self.last_service_date = last_service_date
         self.current_date = current_date
 
